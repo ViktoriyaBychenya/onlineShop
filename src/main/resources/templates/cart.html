@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+*ALL Products in carts*
+<div th:unless="${allProductInCart == null}" th:each="cart : ${allProductInCart}">
+    <b><p th:text="${cart.id}"></p></b>
+    <p th:text="${cart.user.name}"></p>
+    <p th:text="${cart.user.surname}"></p>
+    <p th:text="${cart.user.login}"></p>
+    <p th:text="${cart.product.name_product}"></p>
+    <p th:text="${cart.product.price}"></p>
+    <p th:text="${cart.quantity}"></p>
+</div>
+
+<div th:unless="${allProductsInCart == null}" th:each="cart : ${allProductsInCart}">
+    <b><p th:text="${cart.id}"></p></b>
+    <p th:text="${cart.user.name}"></p>
+    <p th:text="${cart.user.surname}"></p>
+    <p th:text="${cart.user.login}"></p>
+    <p th:text="${cart.product.name_product}"></p>
+    <p th:text="${cart.product.price}"></p>
+    <p th:text="${cart.quantity}"></p>
+</div>
+<div th:unless="${summa == null}">
+    <b>Итого: <p th:text="${summa}"></p></b>
+</div>
+
+
+
+</body>
+</html>

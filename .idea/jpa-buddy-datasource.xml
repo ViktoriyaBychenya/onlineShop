@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="78d38263-ed7f-493f-b202-08621c9983d2" name="onlineShop" url="jdbc:mysql://localhost:3306/shop?serverTimezone=UTC" driverClass="com.mysql.cj.jdbc.Driver" />
+      <data-source id="2f6b4ee3-1348-4e17-a530-bb272c703396" name="online_shop" url="jdbc:mysql://localhost/online_shop?useSSL=false&amp;allowMultiQueries=true&amp;serverTimezone=UTC" driverClass="com.mysql.cj.jdbc.Driver" />
+    </data-sources>
+    <data-source-infos>
+      <data-source-info id="78d38263-ed7f-493f-b202-08621c9983d2" persistence-unit-name="Default" />
+    </data-source-infos>
+  </component>
+</project>

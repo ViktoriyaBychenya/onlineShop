@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:unless="${allBlackList == null}" th:each="list : ${allBlackList}">
+    <b><p th:text="${list.userBlackList.id}"></p></b>
+    <p th:text="${list.userBlackList.login}"></p>
+    <p th:text="${list.debt}"></p>
+</div>
+
+
+
+<div th:unless="${blackListUser == null}" th:each="list : ${blackListUser}">
+    <b><p th:text="${list.userBlackList.id}"></p></b>
+    <p th:text="${list.userBlackList.login}"></p>
+    <p th:text="${list.debt}"></p>
+</div>
+
+</body>
+</html>

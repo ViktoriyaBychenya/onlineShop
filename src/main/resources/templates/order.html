@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:unless="${allOrders == null}" th:each="order : ${allOrders}">
+    <b>Номер заказа: <b th:text="${order.id}"></b></b>
+    <p th:text="${order.userOrder.name}"></p>
+    <p th:text="${order.userOrder.surname}"></p>
+    <p th:text="${order.userOrder.login}"></p>
+    <p th:text="${order.productOfOrder.name_product}"></p>
+    <p th:text="${order.productOfOrder.price}"></p>
+    <p th:text="${order.quantity}"></p>
+    <p th:text="${order.status}"></p>
+    <p th:text="${order.dateOrder}"></p>
+    ---------------------------------
+</div>
+
+</body>
+</html>

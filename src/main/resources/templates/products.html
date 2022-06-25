@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Products!
+----------------
+<!--<div th:each="product : ${productsall}">-->
+<div th:unless="${productsall == null}" th:each="product : ${productsall}">
+    <p th:text="${product.product_name}"></p>
+    <p th:text="${product.description}"></p>
+    <p th:text="${product.manufacturer}"></p>
+    <p th:text="${product.price}"></p>
+</div>
+
+<div th:unless="${someProduct == null}" th:each="product : ${someProduct}">
+    <b><p th:text="${product.product_name}"></p></b>
+    <p th:text="${product.description}"></p>
+    <p th:text="${product.manufacturer}"></p>
+    <p th:text="${product.price}"></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sale</title>
+</head>
+<body>
+
+<div th:unless="${allSale == null}" th:each="sale : ${allSale}">
+    <b th:text="${sale.dateOfPayment}"></b>
+    пользователь <b th:text="${sale.userSale.name}"></b>
+    <b th:text="${sale.userSale.surname}"></b>
+    оплатил заказ № <b th:text="${sale.orderSale.id}"></b>
+    . Сумма заказа <b th:text="${sale.summa}"></b>
+</div>
+
+</body>
+</html>

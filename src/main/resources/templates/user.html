@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title2</title>
+</head>
+<body>
+
+<p> All users! </p>
+
+<div th:unless="${allUsers == null}" th:each="user : ${allUsers}">
+    <p th:text="${user.name}"></p>
+    <p th:text="${user.surname}"></p>
+    <p th:text="${user.email}"></p>
+    <p th:text="${user.telefon}"></p>
+</div>
+<p>---------------------------</p>
+
+<div th:unless="${someUser == null}" th:each="user : ${someUser}">
+    <p th:text="${user.name}"></p>
+    <p th:text="${user.surname}"></p>
+    <p th:text="${user.email}"></p>
+    <p th:text="${user.telefon}"></p>
+    <p>---------------------------</p>
+</div>
+
+</body>
+</html>
