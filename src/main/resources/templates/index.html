@@ -2,14 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FirstPage</title>
-
+    <title>malawianfish.by</title>
+    <link rel="stylesheet" href="css/styles.css">
     <!--Шрифты с Google Fonts-->
-    <link rel="preconnect"  href="https://fonts.gstatic.com">
-    <link href = "https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="resources/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet">
+    <!--Подключение иконочного шрифта fontawesome.com-->
+    <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+    <!--Подключение слайдер swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
 </head>
+
 <body>
+<header class="header">
+    <div class="header_container_top">
+        <div class="logo">
+            <a href="index.html" class="home"><span class="logotype">malawianfish</span></a>
+        </div>
+
+        <div class="personal-item">
+            <div class="auth">
+                <div class="login">
+                    <a href="#" class="auth-link"><i class="fas fa-user-circle"></i>Войти</a>
+                </div>
+                <div class="cart">
+                    <a href="#" class="auth-link"><i class="fas fa-shopping-cart"></i>Корзина</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header_container_bottom">
+        <div class="header_navigation">
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Каталог</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Доставка</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="info.html" class="nav-link">Информация</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-block">
+                <div class="searsh">
+                    <input type="text" class="search-form" placeholder="Поиск">
+                    <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+    <div class="all-main">
+
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="image/slide3.jpg"></div>
+                <div class="swiper-slide"><img src="image/slide9.jpg"></div>
+                <div class="swiper-slide"><img src="image/slide2.jpeg"></div>
+                <div class="swiper-slide"><img src="image/slide10.jpg"></div>
+                <div class="swiper-slide"><img src="image/slide6.jpg"></div>
+                <div class="swiper-slide"><img src="image/slide4.jpg"></div>
+                <div class="swiper-slide"><img src="image/slide5.jpg"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/slider.js"></script>
+
+        <div class="desc">
+            <p> Малавийские цихлиды привлекают аквариумистов ярким внешним видом, незаурядным поведением и не слишком
+                сложным содержанием. Аквариумы, оформленные под малавийцев, невероятно красивы. Этим рыбкам требуется
+                много
+                укрытий, поэтому без хорошего декора не обойтись. Если в аквариуме всё сделать по правилам, он станет
+                настоящим украшением помещения.</p>
+        </div>
+    </div>
+
+</main>
+
+<footer class="l-footer">
+    <div class="footer_container_bottom">
+        <div class="footer_info">
+            <span> 2022 © malawianfish. </span>
+        </div>
+
+        <div class="social">
+            <ul class="social-icon">
+                <li><a href="#" class="social-link"><i class="fab fa-telegram"></i></a></li>
+                <li><a href="https://www.instagram.com/malawianfish/" class="social-link"><i
+                        class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
 
 </body>
 </html>
